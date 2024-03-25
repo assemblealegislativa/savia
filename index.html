@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+
+        <meta charset="UTF-8">
+        <!-- CSS per gli schermi orizzontali -->
+        <link rel="stylesheet" media="screen and (orientation: landscape)"
+              href="style.css">
+        <!-- CSS per gli schermi verticali -->
+        <link rel="stylesheet" media="screen and (orientation: portrait)"
+              href="portrait.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- In caso di player multipli sulla stessa pagina aggiungere solo una volta -->
+        <link href="https://multipler.lepida.it/snippets/video-js.min.css" rel="stylesheet">
+        <script src="https://multipler.lepida.it/snippets/video.min.js"></script>
+
+        <title>Progetto SAVIA</title>
+
+
+    </head>
+    <body>
+      
+       <div class="loghi-container">
+            <a href="https://www.assemblea.emr.it/"><img src="img/logo_al.png" alt="Logo Assemblea legislativa"></a>
+            <a href="https://www.cineca.it/"><img src="img/logo_cineca.png" alt="Logo Cineca"></a>
+            <a href="https://www.unioncamere.gov.it/"><img src="img/logo_unioncamere.png" alt="Logo Unioncamere"></a>
+            <a href="https://www.unibo.it/it/"><img src="img/logo_almamater.png" alt="Logo Alma Mater Studiorum"></a>
+        </div>
+ 
+        <div>
+           <img class="globo" src="img/globo.png" />  
+            <img class="icona_calendario" src="img/calendario_icon.png" /> 
+            <div class="text-overlay">INTELLIGENZA ARTIFICIALE<BR>PER LA QUALITÀ LEGISLATIVA</div>
+            <div class="data">giovedì 4 aprile 2024 - ore 9.30<BR>Sala Guido Fanti, viale Aldo Moro 50 - Bologna
+           </div>
+       
+        <div class="container" alt="Trailer">
+
+            
+
+            <!-- Inclusione video -->
+            <video id="assemblealegislativa1_1013481" 
+                   class="video-js vjs-default-skin" 
+                   controls 
+                   preload="none" 
+                   poster="https://multipler.lepida.it/vod/assemblealegislativa1/video/assemblealegislativa1_1013481/assemblealegislativa1_1013481.jpg"
+                   fluid="true"
+                   live="false"
+                   data-setup="{}">
+                <source src="https://multipler.lepida.it/vod/assemblealegislativa1/video/assemblealegislativa1_1013481/assemblealegislativa1_1013481.m3u8" type="application/x-mpegURL" />
+
+            </video>
+
+        </div>
+
+<div id="cookie-banner">
+		<p>
+			Per offrire informazioni e servizi, questo sito utilizza cookie
+			tecnici e analitici. Chiudendo questo banner, scorrendo questa
+			pagina, cliccando qualunque altro link nella pagina, o comunque
+			proseguendo la navigazione del sito si acconsente all'uso dei cookie.
+			Per maggiori informazioni sui cookie e su come eventualmente
+			disabilitarli consultare la <a href="https://www.assemblea.emr.it/footer/note-legali">Privacy
+				policy</a>
+		</p>
+		<button id="cookie-accetta">Accetta</button>
+	</div>
+
+	
+
+        <script src="script.js"></script>
+    
+
+    </body>
+
+    
+</html>

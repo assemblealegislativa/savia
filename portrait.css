@@ -1,0 +1,192 @@
+body {
+    padding: 0;
+   
+    background-size: cover;
+    background-color: #072444;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 70vw auto;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    
+}
+
+body::before {
+    background-size: 65vw auto;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Larghezza del 50% dello schermo */
+  height: 50vh;
+   background-image: url('img/background.png'); /* Aggiorna il percorso dell'immagine */
+   background-attachment: fixed;
+    background-position: left top;
+    background-repeat: no-repeat;
+  
+  z-index: -1;
+  animation: changeColor 5s infinite alternate;
+}
+
+@keyframes changeColor {
+  0% {
+    filter: hue-rotate(0deg); /* Inizia con il colore originale */
+  }
+  100% {
+    filter: hue-rotate(360deg); /* Ruota il colore di 360 gradi */
+  }
+}
+
+
+
+.loghi-container {
+ display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Allinea i loghi in cima */
+  height: 100vh; /* Altezza piena della viewport */
+  width: 80%; /* Larghezza del 80% dello schermo */
+  margin: 0 auto; /* Per centrare il contenitore */
+}
+
+.loghi-container img {
+    margin: 0 10px; /* Spazio tra i loghi */
+  max-width: 100px; /* Larghezza massima dei loghi */
+  width: 20vw;
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 16vh;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    padding: 10vw; /* Aggiungi spaziatura per migliorare la leggibilità */
+    box-sizing: border-box; /* Include il padding nella larghezza del box */
+    font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+    font-size: 5vw;
+}
+
+
+
+.globo {
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+}
+
+
+
+
+@keyframes expandContract {
+   0% {
+    filter: hue-rotate(0deg); /* Inizia con il colore originale */
+  }
+  100% {
+    filter: hue-rotate(360deg); /* Ruota il colore di 360 gradi */
+  }
+}
+
+
+.icona_calendario
+{
+    position: absolute;
+    top: 23vh;
+    left: 10vw;
+    width: 7vw;
+}
+
+.data
+{
+    position: absolute;
+    top:24vh;
+    left: 3vw;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    padding: 16vw; /* Aggiungi spaziatura per migliorare la leggibilità */
+    box-sizing: border-box; /* Include il padding nella larghezza del box */
+    font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+    font-size: 4vw;
+}
+
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto; /* L'altezza viene adattata in base alla dimensione dei video */
+    margin: 0 auto;
+    position: absolute;
+    top: 30vh;
+}
+.video-container iframe {
+    margin: 10px 0; /* Aggiungi uno spazio tra i video */
+}
+
+
+
+
+.container {
+    width: 75vw;
+    height: 100%;
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    text-align: center;
+}
+
+
+
+.embed {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.embed iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.embed_video {
+    padding_bottom:10px;
+
+}
+
+
+#cookie-banner {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+#cookie-banner p {
+    margin: 0;
+}
+
+#cookie-accetta {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+

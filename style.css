@@ -1,0 +1,199 @@
+body {
+    padding: 0;
+   
+    background-size: cover;
+    background-color: #072444;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 50vw auto;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw; /* Larghezza del 50% dello schermo */
+  height: 100vh;
+   background-image: url('img/background.png'); /* Aggiorna il percorso dell'immagine */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  animation: changeColor 5s infinite alternate;
+}
+
+@keyframes changeColor {
+  0% {
+    filter: hue-rotate(0deg); /* Inizia con il colore originale */
+  }
+  100% {
+    filter: hue-rotate(360deg); /* Ruota il colore di 360 gradi */
+  }
+}
+
+.loghi-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around; /* Per distribuire gli elementi in modo uniforme */
+    align-items: center; /* Per allineare verticalmente al centro */
+    width: 100vw; /* Larghezza del div */
+    height: 100px; /* Altezza del div, puoi regolarla a tuo piacimento */
+}
+
+.loghi-container img {
+    max-width: 100%; /* Per garantire che le immagini siano responsivamente dimensionate */
+    max-height: 100%; /* Per garantire che le immagini siano responsivamente dimensionate */
+}
+
+.programma {
+	position: absolute;
+	top: 90vh;
+	left: 70vw;
+	width: 40vw;
+	width: 13vw;
+}
+
+
+
+.globo {
+	position: absolute;
+	top: 20vh;
+	left: 61vw;
+	width: 25vw;
+        opacity: 0.5;
+animation: expandContract 20s infinite alternate; /* Durata, ripetizione e direzione dell'animazione */
+}
+
+
+
+@keyframes expandContract {
+   0% {
+    filter: hue-rotate(0deg); /* Inizia con il colore originale */
+  }
+  100% {
+    filter: hue-rotate(360deg); /* Ruota il colore di 360 gradi */
+  }
+}
+
+.icona_calendario
+{
+	position: absolute;
+	top: 80vh;
+	left: 10vw;
+	width: 5vw;
+}
+.data
+{
+	  position: absolute;
+            top: 85vh;
+            left: 0;
+            transform: translateY(-50%);
+            color: #fff;
+            text-align: left;
+            padding: 16vw; /* Aggiungi spaziatura per migliorare la leggibilità */
+            box-sizing: border-box; /* Include il padding nella larghezza del box */
+			font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+			font-size: 5vh;
+}
+
+.text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            color: #fff;
+            text-align: left;
+            padding: 10vw; /* Aggiungi spaziatura per migliorare la leggibilità */
+            box-sizing: border-box; /* Include il padding nella larghezza del box */
+			font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+			font-size: 5vw;
+        }
+
+
+
+
+
+
+.container {
+	width: 75%;
+	height: 100%;
+	position: absolute;
+	top: 160vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+
+
+.container_podcast {
+	width: 75%;
+	height: 100%;
+	position: absolute;
+	top: 195vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+
+.embed {
+	width: 33.33%;
+	height: 400px;
+	padding: 10px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.embed_video {
+	width: 33.33%;
+	
+	padding: 10px;
+	box-sizing: border-box;
+	float: left;
+}
+
+
+.embed iframe {
+	width: 100%;
+	height: 100%;
+}
+
+#cookie-banner {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+#cookie-banner p {
+  margin: 0;
+}
+
+#cookie-accetta {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
