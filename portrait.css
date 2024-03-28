@@ -1,6 +1,6 @@
 body {
     padding: 0;
-   
+
     background-size: cover;
     background-color: #072444;
     background-attachment: fixed;
@@ -10,56 +10,56 @@ body {
     background-size: 70vw auto;
     /* overflow: hidden; */
     overflow-x: hidden;
-    
+
 }
 
 body::before {
     background-size: 65vw auto;
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw; /* Larghezza del 50% dello schermo */
-  height: 50vh;
-   background-image: url('img/background.png'); /* Aggiorna il percorso dell'immagine */
-   background-attachment: fixed;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Larghezza del 50% dello schermo */
+    height: 50vh;
+    background-image: url('img/background.png'); /* Aggiorna il percorso dell'immagine */
+    background-attachment: fixed;
     background-position: left top;
     background-repeat: no-repeat;
-  
-  z-index: -1;
-  animation: changeColor 5s infinite alternate;
+
+    z-index: -1;
+    animation: changeColor 5s infinite alternate;
 }
 
 @keyframes changeColor {
-  0% {
-    filter: hue-rotate(0deg); /* Inizia con il colore originale */
-  }
-  100% {
-    filter: hue-rotate(360deg); /* Ruota il colore di 360 gradi */
-  }
+    0% {
+        filter: hue-rotate(0deg); /* Inizia con il colore originale */
+    }
+    100% {
+        filter: hue-rotate(360deg); /* Ruota il colore di 360 gradi */
+    }
 }
 
 .savia
 {
-	position: absolute;
-	top: 5vh;
-	left: 13vw;
-	width: 50vw;
+    position: absolute;
+    top: 5vh;
+    left: 13vw;
+    width: 50vw;
 }
 
 .loghi-container {
- display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Allinea i loghi in cima */
-  height: 100vh; /* Altezza piena della viewport */
-  width: 80%; /* Larghezza del 80% dello schermo */
-  margin: 0 auto; /* Per centrare il contenitore */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Allinea i loghi in cima */
+    height: 100vh; /* Altezza piena della viewport */
+    width: 80%; /* Larghezza del 80% dello schermo */
+    margin: 0 auto; /* Per centrare il contenitore */
 }
 
 .loghi-container img {
     margin: 0 10px; /* Spazio tra i loghi */
-  max-width: 100px; /* Larghezza massima dei loghi */
-  width: 20vw;
+    max-width: 100px; /* Larghezza massima dei loghi */
+    width: 20vw;
 }
 
 
@@ -88,12 +88,12 @@ body::before {
 
 
 @keyframes expandContract {
-   0% {
-    filter: hue-rotate(0deg); /* Inizia con il colore originale */
-  }
-  100% {
-    filter: hue-rotate(360deg); /* Ruota il colore di 360 gradi */
-  }
+    0% {
+        filter: hue-rotate(0deg); /* Inizia con il colore originale */
+    }
+    100% {
+        filter: hue-rotate(360deg); /* Ruota il colore di 360 gradi */
+    }
 }
 
 
@@ -195,4 +195,5 @@ body::before {
     padding: 10px 20px;
     cursor: pointer;
 }
+body {
 
