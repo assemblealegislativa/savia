@@ -87,6 +87,16 @@ animation: expandContract 20s infinite alternate; /* Durata, ripetizione e direz
 	left: 10vw;
 	width: 5vw;
 }
+
+.savia
+{
+      
+	position: absolute;
+	top: 17vh;
+	left: 10vw;
+	width: 35vw;
+}
+
 .data
 {
 	  position: absolute;
@@ -103,7 +113,7 @@ animation: expandContract 20s infinite alternate; /* Durata, ripetizione e direz
 
 .text-overlay {
             position: absolute;
-            top: 50%;
+            top: 55vh;
             left: 0;
             transform: translateY(-50%);
             color: #fff;

@@ -39,7 +39,13 @@ body::before {
   }
 }
 
-
+.savia
+{
+	position: absolute;
+	top: 5vh;
+	left: 13vw;
+	width: 50vw;
+}
 
 .loghi-container {
  display: flex;
