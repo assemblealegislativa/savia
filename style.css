@@ -192,31 +192,59 @@ div.sarti_embed_right iframe{
     font-size: 5vw;
 }
 
+.text-description {
+    position: absolute;
+    top: 81vh;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    padding: 10vw; /* Aggiungi spaziatura per migliorare la leggibilità */
+    box-sizing: border-box; /* Include il padding nella larghezza del box */
+    font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+    font-size: 1.5vw;
+}
+
 
  .container {
+    position: relative;
+    top: 60vh; /* Posiziona le caselle a 80vh dalla cima */
     display: flex;
-    flex-wrap: wrap;
-    width: 80vw; /* Larghezza del 80% dello schermo */
-    height: 100%;
-    margin: 80vh auto 0; /* Margin-top del 80% dalla sommità, margin-right e margin-left automatici per centrare */
+    justify-content: center; /* Centra le caselle orizzontalmente */
   }
-
+  
+  .container-notizie {
+      position: relative;
+      top: 85vh;
+    display: flex;
+    width: 90vw; /* Larghezza del 80% dello schermo */
+    margin: 0 auto; /* Per centrare il contenitore */
+  }
+  
+  div.cell img {
+  width: 13vw; /* Larghezza al 100% del contenitore */
+  height: auto; /* Altezza automatica per mantenere le proporzioni originali */
+  float: left;
+  padding-right: 20px;
+  
+}
+  
   .cell {
-    flex: 1;
+    flex: 1; /* Ciascuna cella occupa lo stesso spazio */
+   margin-left: 30px; /* Aggiungi spazio a sinistra del testo */
+  align-self: flex-start;
+    height: 200px; /* Altezza fissa */
+  }
+
+  /* Stile delle caselle */
+  .box {
+    width: 80vw; /* Imposta la larghezza al 80% dello schermo */
+    height: 200px;
     border: 1px solid black;
-    box-sizing: border-box;
-  }
-
-  .single-cell {
-    flex-basis: 100%; /* La cella occupa tutta la larghezza */
-     justify-content: center;
-    align-items: center;
-  }
-
-  .half-cell {
-    flex-basis: 50%; /* La cella occupa la metà della larghezza */
-     justify-content: center;
-    align-items: center;
+    margin: 10px; /* Spazio tra le caselle */
+    display: flex;
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
   }
 
 
@@ -226,6 +254,9 @@ div.sarti_embed_right iframe{
     width: 80%;
     margin: auto;
     height: 100vh;
+    position: relative;
+    top: 90vh; /* Posiziona le caselle a 80vh dalla cima */
+    
   }
 
   .grid-item {
@@ -326,3 +357,20 @@ div.sarti_embed_right iframe{
   margin: 0 auto;
 margin: 80vh auto 0;
   }
+  
+  a {
+  color: #fff; /* Colore del testo */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  font-size: 1.5vw;
+}
+
+/* Stile del link quando il cursore ci passa sopra */
+a:hover {
+  color: #EEE6E6; /* Cambia il colore del testo */
+  text-decoration: underline; /* Aggiunge la sottolineatura */
+}
+
+/* Stile del link visitato */
+a:visited {
+  color: #F3CCCC; /* Cambia il colore del testo */
+}

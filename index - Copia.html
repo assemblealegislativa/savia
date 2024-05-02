@@ -3,70 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Griglia Flex</title>
+<title>Post Taggati "Savia" su WordPress</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <style>
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  .post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
   }
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
+  .post-title {
+    font-weight: bold;
   }
 
-  .cell {
-    flex: 1;
-    border: 1px solid black;
-    box-sizing: border-box;
-  }
-
-  .single-cell {
-    flex-basis: 100%; /* La cella occupa tutta la larghezza */
-  }
-
-  .half-cell {
-    flex-basis: 50%; /* La cella occupa la metà della larghezza */
+  .post-content {
+    margin-top: 5px;
   }
 </style>
 </head>
 <body>
 
-    <!-- In caso di player multipli sulla stessa pagina aggiungere solo una volta -->
-<link href="https://multipler.lepida.it/snippets/video-js.min.css" rel="stylesheet">
-<script src="https://multipler.lepida.it/snippets/video.min.js"></script>
+<div id="posts-container"></div>
 
-    
-<!-- Inclusione video -->
-<video id="assemblealegislativa1_1013512" 
-    class="video-js vjs-default-skin" 
-    controls 
-    preload="none" 
-    poster="https://multipler.lepida.it/vod/assemblealegislativa1/video/assemblealegislativa1_1013512/assemblealegislativa1_1013512.jpg"
-    fluid="true"
-    live="false"
-    data-setup="{}">
-<source src="https://multipler.lepida.it/vod/assemblealegislativa1/video/assemblealegislativa1_1013512/assemblealegislativa1_1013512.m3u8" type="application/x-mpegURL" />
+<script>
+$(document).ready(function() {
+  // URL dell'endpoint REST API di WordPress per tutti i post
+  var apiUrl = 'https://cronacabianca.eu/wp-json/wp/v2/posts';
 
-</video>
-    
-    
-<div class="container">
-  <!-- Prima riga, singola cella -->
-  <div class="cell single-cell">
-    Prima cella
-  </div>
+  // Funzione per caricare i post utilizzando jQuery AJAX
+  $.ajax({
+    url: apiUrl,
+    dataType: 'json',
+    success: function(posts) {
+      // Filtriamo i post che contengono il tag "savia"
+      var saviaPosts = posts.filter(function(post) {
+        return post.tags.some(function(tag) {
+          return tag.slug === 'savia'; // Assumiamo che 'savia' sia lo slug del tag
+        });
+      });
 
-  <!-- Seconda riga, divisa in due celle -->
-  <div class="cell half-cell">
-    Seconda cella, parte 1
-  </div>
-  <div class="cell half-cell">
-    Seconda cella, parte 2
-  </div>
-</div>
+      // Costruzione dell'HTML per visualizzare i post
+      var html = '';
+      saviaPosts.forEach(function(post) {
+        var title = post.title.rendered;
+        var content = post.content.rendered;
+
+        html += '<div class="post">';
+        html += '<div class="post-title">' + title + '</div>';
+        html += '<div class="post-content">' + content + '</div>';
+        html += '</div>';
+      });
+
+      // Inserimento dell'HTML nella pagina
+      $('#posts-container').html(html);
+    },
+    error: function(xhr, status, error) {
+      console.error('Errore durante il caricamento dei post:', error);
+    }
+  });
+});
+</script>
 
 </body>
 </html>
