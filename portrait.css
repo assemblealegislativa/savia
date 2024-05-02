@@ -195,5 +195,34 @@ body::before {
     padding: 10px 20px;
     cursor: pointer;
 }
-body {
 
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 90%; /* Larghezza delle colonne del 90% dello schermo */
+    grid-gap: 20px; /* Spazio tra le righe */
+    width: 80%; /* Larghezza della griglia */
+    margin: auto; /* Centra la griglia */
+    padding-top: 20px; /* Spazio superiore */
+    top: 10000vh;
+  }
+
+  .grid-item {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow: hidden; /* Evita overflow dell'iframe */
+  }
+
+
+  
+  .iframe-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .iframe-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  

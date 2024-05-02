@@ -13,6 +13,9 @@ body {
 
 }
 
+
+
+
 body::before {
     content: '';
     position: fixed;
@@ -200,6 +203,15 @@ div.sarti_embed_right iframe{
 margin: 80vh auto 0;
 }
 
+.container_last {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+margin: 80vh auto 0;
+}
+
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -212,6 +224,10 @@ margin: 80vh auto 0;
   
   box-sizing: border-box;
   padding: 30px; /* Aggiungi spazio tra gli iframe */
+}
+
+.last-item {
+  justify-self: center; /* Centra l'ultima cella nella griglia */
 }
 
   .iframe-container {
@@ -292,3 +308,13 @@ margin: 80vh auto 0;
     padding: 10px 20px;
     cursor: pointer;
 }
+
+ .video-container {
+    width: 80%;
+    max-width: 800px; /* Limita la larghezza del video */
+    display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+margin: 80vh auto 0;
+  }
