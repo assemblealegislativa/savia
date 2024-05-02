@@ -202,7 +202,8 @@ div.sarti_embed_right iframe{
     padding: 10vw; /* Aggiungi spaziatura per migliorare la leggibilità */
     box-sizing: border-box; /* Include il padding nella larghezza del box */
     font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
-    font-size: 1.5vw;
+    font-size: 100vw;
+    
 }
 
 
@@ -265,9 +266,7 @@ div.sarti_embed_right iframe{
   padding: 30px; /* Aggiungi spazio tra gli iframe */
 }
 
-.last-item {
-  justify-self: center; /* Centra l'ultima cella nella griglia */
-}
+
 
   .iframe-container {
     position: relative;
@@ -285,42 +284,7 @@ div.sarti_embed_right iframe{
   }
 
 
-.container_podcast {
-    width: 75%;
-    height: 100%;
-    position: absolute;
-    top: 195vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
-
-.embed {
-    width: 33.33%;
-    height: 400px;
-    padding: 10px;
-    box-sizing: border-box;
-    float: left;
-}
-
-.embed_video {
-    width: 33.33%;
-
-    padding: 10px;
-    box-sizing: border-box;
-    float: left;
-}
-
-
-.embed iframe {
-    width: 100%;
-    height: 100%;
-}
 
 #cookie-banner {
     background-color: rgba(255, 255, 255, 0.9);
@@ -348,15 +312,7 @@ div.sarti_embed_right iframe{
     cursor: pointer;
 }
 
- .video-container {
-    width: 80%;
-    
-    display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
-margin: 80vh auto 0;
-  }
+
   
   a {
   color: #fff; /* Colore del testo */
