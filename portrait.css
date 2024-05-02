@@ -51,7 +51,7 @@ body::before {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Allinea i loghi in cima */
-    height: 100vh; /* Altezza piena della viewport */
+    ; height: 10vh; /* Altezza piena della viewport */
     width: 80%; /* Larghezza del 80% dello schermo */
     margin: 0 auto; /* Per centrare il contenitore */
 }
@@ -126,7 +126,7 @@ body::before {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto; /* L'altezza viene adattata in base alla dimensione dei video */
+   ; height: auto; /* L'altezza viene adattata in base alla dimensione dei video */
     margin: 0 auto;
     position: absolute;
     top: 30vh;
@@ -140,7 +140,7 @@ body::before {
 
 .container {
     width: 75vw;
-    height: 100%;
+    
     position: absolute;
     top: 80vh;
     left: 50%;
@@ -198,31 +198,96 @@ body::before {
 
 
   .grid-container {
-    display: grid;
-    grid-template-columns: 90%; /* Larghezza delle colonne del 90% dello schermo */
-    grid-gap: 20px; /* Spazio tra le righe */
-    width: 80%; /* Larghezza della griglia */
-    margin: auto; /* Centra la griglia */
-    padding-top: 20px; /* Spazio superiore */
+    display: flex;
+            flex-direction: column;
+            gap: 20px; /* Spazio tra le celle */
+            position: absolute;
+  top: 107vh;
    
   }
+  
+    .container-notizie {
+      position: relative;
+      top: 30vh;
+    display: flex;
+    width: 90vw; /* Larghezza del 80% dello schermo */
+    margin: 0 auto; /* Per centrare il contenitore */
+    font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+    font-size: 5vw;
+  }
+  
+    div.cell img {
+  width: 13vw; /* Larghezza al 100% del contenitore */
+  height: auto; /* Altezza automatica per mantenere le proporzioni originali */
+  float: left;
+  padding-right: 20px;
+  
+}
+  
+  .cell {
+    flex: 1; /* Ciascuna cella occupa lo stesso spazio */
+   margin-left: 30px; /* Aggiungi spazio a sinistra del testo */
+  align-self: flex-start;
+    
+  }
+  
+  .text-description {
+    position: absolute;
+    top: 28vh;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    padding: 10vw; /* Aggiungi spaziatura per migliorare la leggibilità */
+    box-sizing: border-box; /* Include il padding nella larghezza del box */
+    font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+   
+    
+}
 
   .grid-item {
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    overflow: hidden; /* Evita overflow dell'iframe */
+    flex: 1; /* Ciascuna cella occupa lo stesso spazio */
+   margin-left: 30px; /* Aggiungi spazio a sinistra del testo */
+  align-self: flex-start;
+  
   }
 
+ /* Stile delle caselle */
+  .box {
+    width: 80vw; /* Imposta la larghezza al 80% dello schermo */
+    ; height: 200px;
+    border: 1px solid black;
+    margin: 0 auto; /* Spazio tra le caselle */
+    display: flex;
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+  }
 
   
   .iframe-container {
     width: 100%;
-    height: 100%;
+   ; height: 100%;
   }
 
   .iframe-container iframe {
     width: 100%;
-    height: 100%;
+   ; height: 100%;
   }
 
   
+  a {
+  color: #fff; /* Colore del testo */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  font-size: 3vw;
+}
+
+/* Stile del link quando il cursore ci passa sopra */
+a:hover {
+  color: #EEE6E6; /* Cambia il colore del testo */
+  text-decoration: underline; /* Aggiunge la sottolineatura */
+}
+
+/* Stile del link visitato */
+a:visited {
+  color: #F3CCCC; /* Cambia il colore del testo */
+}
