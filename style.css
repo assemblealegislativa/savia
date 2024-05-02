@@ -59,6 +59,71 @@ body::before {
 }
 
 
+.sarti_embed_left {
+        position: absolute; 
+        top: 160vh;
+        width: 35vw; 
+        
+        padding-top: 56.2500%;
+        padding-bottom: 0; 
+        padding-left: 10vw;
+        box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
+        margin-top: 1.6em; 
+        margin-bottom: 0.9em; 
+        overflow: hidden;
+        border-radius: 8px; 
+        will-change: transform;
+
+    }
+
+div.sarti_embed_left iframe{
+    
+    position: absolute;
+    width: 100%; 
+    height: 60vh;
+    top: 0; 
+    left: 0; 
+    border: none;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+.sarti_embed_right {
+        position: absolute; 
+        top: 160vh;
+        left: 50vw;
+        width: 35vw; 
+        
+        padding-top: 56.2500%;
+        padding-bottom: 0; 
+        padding-left: 10vw;
+        box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
+        margin-top: 1.6em; 
+        margin-bottom: 0.9em; 
+        overflow: hidden;
+        border-radius: 8px; 
+        will-change: transform;
+
+    }
+
+div.sarti_embed_right iframe{
+    
+    position: absolute;
+    width: 100%; 
+    height: 60vh;
+    top: 0; 
+    left: 0; 
+    border: none;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+
+
 
 .globo {
     position: absolute;
@@ -127,22 +192,42 @@ body::before {
 
 
 
-
-
 .container {
-    width: 75%;
-    height: 100%;
-    position: absolute;
-    top: 160vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+margin: 80vh auto 0;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+  }
+
+  .grid-item {
+  
+  box-sizing: border-box;
+  padding: 30px; /* Aggiungi spazio tra gli iframe */
+}
+
+  .iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 
 .container_podcast {
