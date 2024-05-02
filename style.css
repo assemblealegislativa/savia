@@ -193,23 +193,31 @@ div.sarti_embed_right iframe{
 }
 
 
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw; /* Larghezza del 80% dello schermo */
+    height: 100%;
+    margin: 80vh auto 0; /* Margin-top del 80% dalla sommità, margin-right e margin-left automatici per centrare */
+  }
 
+  .cell {
+    flex: 1;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
-margin: 80vh auto 0;
-}
+  .single-cell {
+    flex-basis: 100%; /* La cella occupa tutta la larghezza */
+     justify-content: center;
+    align-items: center;
+  }
 
-.container_last {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
-margin: 80vh auto 0;
-}
+  .half-cell {
+    flex-basis: 50%; /* La cella occupa la metà della larghezza */
+     justify-content: center;
+    align-items: center;
+  }
 
 
 .grid-container {
