@@ -204,7 +204,7 @@ body::before {
     width: 80%; /* Larghezza della griglia */
     margin: auto; /* Centra la griglia */
     padding-top: 20px; /* Spazio superiore */
-    top: 10000vh;
+   
   }
 
   .grid-item {

@@ -311,7 +311,7 @@ margin: 80vh auto 0;
 
  .video-container {
     width: 80%;
-    max-width: 800px; /* Limita la larghezza del video */
+    
     display: flex;
   flex-wrap: wrap;
   width: 80%;
