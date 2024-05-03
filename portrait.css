@@ -201,7 +201,7 @@ body::before {
     grid-template-columns: 80vw;
     width: 80%;
     margin: auto;
-    height: 100vh;
+    
     position: relative;
     top: 90vh; /* Posiziona le caselle a 80vh dalla cima */
     
@@ -247,9 +247,9 @@ body::before {
 }
 
   .grid-item {
-    flex: 1; /* Ciascuna cella occupa lo stesso spazio */
-   margin-left: 30px; /* Aggiungi spazio a sinistra del testo */
-  align-self: flex-start;
+    
+   
+  
   
   }
 
