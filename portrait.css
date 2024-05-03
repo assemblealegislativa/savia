@@ -209,7 +209,7 @@ body::before {
   
     .container-notizie {
       position: relative;
-      top: 8vh;
+      top: 9vh;
     display: grid;
     width: 90vw; /* Larghezza del 80% dello schermo */
     margin: 0 auto; /* Per centrare il contenitore */
@@ -236,7 +236,7 @@ body::before {
   
   .text-description {
     position: relative;
-    top: 15vh;
+    top: 17vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
@@ -250,7 +250,7 @@ body::before {
 }
 .titolo-slide {
     position: relative;
-    top: 53vh;
+    top: 54vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
@@ -266,7 +266,7 @@ body::before {
 
 .titolo-video {
     position: relative;
-    top: 15vh;
+    top: 16vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
