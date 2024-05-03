@@ -203,7 +203,7 @@ body::before {
     margin: auto;
     
     position: relative;
-    top: 52vh; /* Posiziona le caselle a 80vh dalla cima */
+    top: 54vh; /* Posiziona le caselle a 80vh dalla cima */
     
   }
   
