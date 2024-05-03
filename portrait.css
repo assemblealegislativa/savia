@@ -65,7 +65,7 @@ body::before {
 
 .text-overlay {
     position: absolute;
-    top: 16vh;
+    top: 17vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
@@ -73,7 +73,7 @@ body::before {
     padding: 10vw; /* Aggiungi spaziatura per migliorare la leggibilità */
     box-sizing: border-box; /* Include il padding nella larghezza del box */
     font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
-    font-size: 5vw;
+    font-size: 0.6em;
 }
 
 
@@ -203,13 +203,13 @@ body::before {
     margin: auto;
     
     position: relative;
-    top: 90vh; /* Posiziona le caselle a 80vh dalla cima */
+    top: 76vh; /* Posiziona le caselle a 80vh dalla cima */
     
   }
   
     .container-notizie {
       position: relative;
-      top: 30vh;
+      top: 13vh;
     display: flex;
     width: 90vw; /* Larghezza del 80% dello schermo */
     margin: 0 auto; /* Per centrare il contenitore */
@@ -233,8 +233,37 @@ body::before {
   }
   
   .text-description {
-    position: absolute;
-    top: 28vh;
+    position: relative;
+    top: 13vh;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    
+    box-sizing: border-box; /* Include il padding nella larghezza del box */
+    font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+        font-size: 0.6em;
+    
+}
+.titolo-slide {
+    position: relative;
+    top: 75vh;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    
+    box-sizing: border-box; /* Include il padding nella larghezza del box */
+    font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+        font-size: 0.6em;
+        text-align:center;
+    
+}
+
+
+.titolo-video {
+    position: relative;
+    top: 20vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
@@ -242,9 +271,12 @@ body::before {
     padding: 10vw; /* Aggiungi spaziatura per migliorare la leggibilità */
     box-sizing: border-box; /* Include il padding nella larghezza del box */
     font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
-   
+        font-size: 0.6em;
+        text-align:center;
     
 }
+
+
 
 
   .grid-item {
@@ -290,19 +322,3 @@ body::before {
   }
 
   
-  a {
-  color: #fff; /* Colore del testo */
-  text-decoration: none; /* Rimuove la sottolineatura */
-  font-size: 3vw;
-}
-
-/* Stile del link quando il cursore ci passa sopra */
-a:hover {
-  color: #EEE6E6; /* Cambia il colore del testo */
-  text-decoration: underline; /* Aggiunge la sottolineatura */
-}
-
-/* Stile del link visitato */
-a:visited {
-  color: #F3CCCC; /* Cambia il colore del testo */
-}

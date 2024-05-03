@@ -116,6 +116,37 @@ body::before {
     font-size: 5vh;
 }
 
+
+.titolo-slide {
+    position: relative;
+    top: 167vh;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    
+    box-sizing: border-box; /* Include il padding nella larghezza del box */
+    font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+        font-size: 2.7em;
+        text-align:center;
+    
+}
+
+.titolo-video {
+    position: relative;
+    top: 113vh;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    
+    box-sizing: border-box; /* Include il padding nella larghezza del box */
+    font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+        font-size: 2.7em;
+        text-align:center;
+    
+}
+
 .text-overlay {
     position: absolute;
     top: 55vh;
@@ -126,12 +157,12 @@ body::before {
     padding: 10vw; /* Aggiungi spaziatura per migliorare la leggibilità */
     box-sizing: border-box; /* Include il padding nella larghezza del box */
     font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
-    font-size: 5vw;
+    font-size: 2.8em;
 }
 
 .text-description {
     position: absolute;
-    top: 81vh;
+    top: 75vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
@@ -139,14 +170,14 @@ body::before {
     padding: 10vw; /* Aggiungi spaziatura per migliorare la leggibilità */
     box-sizing: border-box; /* Include il padding nella larghezza del box */
     font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
-    font-size: 100vw;
+    font-size: 2em;
     
 }
 
 
  .container {
     position: relative;
-    top: 115vh; /* Posiziona le caselle a 80vh dalla cima */
+    top: 135vh; /* Posiziona le caselle a 80vh dalla cima */
     display: flex;
     justify-content: center; /* Centra le caselle orizzontalmente */
   }
@@ -195,7 +226,7 @@ body::before {
     margin: auto;
     height: 100vh;
     position: relative;
-    top: 150vh; /* Posiziona le caselle a 80vh dalla cima */
+    top: 180vh; /* Posiziona le caselle a 80vh dalla cima */
     
   }
 
@@ -267,19 +298,4 @@ body::before {
 
 
   
-  a {
-  color: #fff; /* Colore del testo */
-  text-decoration: none; /* Rimuove la sottolineatura */
-  font-size: 1.5vw;
-}
-
-/* Stile del link quando il cursore ci passa sopra */
-a:hover {
-  color: #EEE6E6; /* Cambia il colore del testo */
-  text-decoration: underline; /* Aggiunge la sottolineatura */
-}
-
-/* Stile del link visitato */
-a:visited {
-  color: #F3CCCC; /* Cambia il colore del testo */
-}
+ 
