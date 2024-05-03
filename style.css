@@ -134,7 +134,7 @@ body::before {
 
 .titolo-video {
     position: relative;
-    top: 113vh;
+    top: 102vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
