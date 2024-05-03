@@ -221,7 +221,7 @@ body::before {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+   
     width: 80%;
     margin: auto;
     height: 100vh;
