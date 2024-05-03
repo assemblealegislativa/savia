@@ -73,7 +73,7 @@ body::before {
     padding: 10vw; /* Aggiungi spaziatura per migliorare la leggibilità */
     box-sizing: border-box; /* Include il padding nella larghezza del box */
     font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
-    font-size: 0.6em;
+    font-size: 1.2em;
 }
 
 
@@ -142,7 +142,7 @@ body::before {
     width: 75vw;
     
     position: absolute;
-    top: 65vh;
+    top: 81vh;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
@@ -203,18 +203,18 @@ body::before {
     margin: auto;
     
     position: relative;
-    top: 58vh; /* Posiziona le caselle a 80vh dalla cima */
+    top: 51vh; /* Posiziona le caselle a 80vh dalla cima */
     
   }
   
     .container-notizie {
       position: relative;
-      top: 13vh;
-    display: flex;
+      top: 8vh;
+    display: grid;
     width: 90vw; /* Larghezza del 80% dello schermo */
     margin: 0 auto; /* Per centrare il contenitore */
     font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
-    font-size: 5vw;
+    font-size: 0.7em;
   }
   
     div.cell img {
@@ -229,12 +229,14 @@ body::before {
     flex: 1; /* Ciascuna cella occupa lo stesso spazio */
    margin-left: 30px; /* Aggiungi spazio a sinistra del testo */
   align-self: flex-start;
+  padding: 9px;
+  font-size: 1.2em;
     
   }
   
   .text-description {
     position: relative;
-    top: 13vh;
+    top: 15vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
@@ -242,12 +244,13 @@ body::before {
     
     box-sizing: border-box; /* Include il padding nella larghezza del box */
     font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
-        font-size: 0.6em;
+        font-size: 1em;
+        padding: 10px;
     
 }
 .titolo-slide {
     position: relative;
-    top: 59vh;
+    top: 53vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
@@ -255,7 +258,7 @@ body::before {
     
     box-sizing: border-box; /* Include il padding nella larghezza del box */
     font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
-        font-size: 0.6em;
+        font-size: 1em;
         text-align:center;
     
 }
@@ -263,7 +266,7 @@ body::before {
 
 .titolo-video {
     position: relative;
-    top: 20vh;
+    top: 15vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
@@ -271,7 +274,7 @@ body::before {
     padding: 10vw; /* Aggiungi spaziatura per migliorare la leggibilità */
     box-sizing: border-box; /* Include il padding nella larghezza del box */
     font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
-        font-size: 0.6em;
+        font-size: 1em;
         text-align:center;
     
 }
