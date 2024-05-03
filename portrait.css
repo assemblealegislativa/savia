@@ -142,7 +142,7 @@ body::before {
     width: 75vw;
     
     position: absolute;
-    top: 80vh;
+    top: 65vh;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
@@ -203,7 +203,7 @@ body::before {
     margin: auto;
     
     position: relative;
-    top: 76vh; /* Posiziona le caselle a 80vh dalla cima */
+    top: 58vh; /* Posiziona le caselle a 80vh dalla cima */
     
   }
   
@@ -247,7 +247,7 @@ body::before {
 }
 .titolo-slide {
     position: relative;
-    top: 75vh;
+    top: 59vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
