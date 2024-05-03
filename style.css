@@ -119,7 +119,7 @@ body::before {
 
 .titolo-slide {
     position: relative;
-    top: 167vh;
+    top: 155vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
@@ -177,7 +177,7 @@ body::before {
 
  .container {
     position: relative;
-    top: 135vh; /* Posiziona le caselle a 80vh dalla cima */
+    top: 124vh; /* Posiziona le caselle a 80vh dalla cima */
     display: flex;
     justify-content: center; /* Centra le caselle orizzontalmente */
   }
@@ -226,7 +226,7 @@ body::before {
     margin: auto;
     height: 100vh;
     position: relative;
-    top: 180vh; /* Posiziona le caselle a 80vh dalla cima */
+    top: 159vh; /* Posiziona le caselle a 80vh dalla cima */
     
   }
 
