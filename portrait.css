@@ -142,7 +142,7 @@ body::before {
     width: 75vw;
     
     position: absolute;
-    top: 84vh;
+    top: 111vh;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
@@ -250,7 +250,7 @@ body::before {
 }
 .titolo-slide {
     position: relative;
-    top: 56vh;
+    top: 55vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;
@@ -263,10 +263,46 @@ body::before {
     
 }
 
+.container-streaming {
+      position: relative;
+      top: 13.5vh; /* Posiziona le caselle a 80vh dalla cima */
+      display: flex;
+      justify-content: center; /* Centra le caselle orizzontalmente */
+  }
+
+  .titolo-streaming {
+    position: relative;
+    top: 14vh;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    
+    box-sizing: border-box; /* Include il padding nella larghezza del box */
+    font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+        font-size: 1em;
+        text-align:center;
+    
+}
+  
+.titolo-multimedia {
+    position: relative;
+    top: 13vh;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    
+    box-sizing: border-box; /* Include il padding nella larghezza del box */
+    font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
+        font-size: 2.3em;
+        text-align:center;
+    
+}
 
 .titolo-video {
     position: relative;
-    top: 16vh;
+    top: 17vh;
     left: 0;
     transform: translateY(-50%);
     color: #fff;

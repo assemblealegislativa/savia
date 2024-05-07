@@ -211,11 +211,11 @@ body::before {
     justify-content: center; /* Centra le caselle orizzontalmente */
   }
   
-   .container-streaming {
-    position: relative;
-    top: 131vh; /* Posiziona le caselle a 80vh dalla cima */
-    display: flex;
-    justify-content: center; /* Centra le caselle orizzontalmente */
+  .container-streaming {
+      position: relative;
+      top: 131vh; /* Posiziona le caselle a 80vh dalla cima */
+      display: flex;
+      justify-content: center; /* Centra le caselle orizzontalmente */
   }
   
   .container-notizie {
