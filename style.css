@@ -249,7 +249,7 @@ body::before {
     width: 80vw; /* Imposta la larghezza al 80% dello schermo */
     height: 200px;
     border: 1px solid black;
-    margin: 10px; /* Spazio tra le caselle */
+    
     display: flex;
     justify-content: center; /* Centra il contenuto orizzontalmente */
     align-items: center; /* Centra il contenuto verticalmente */
