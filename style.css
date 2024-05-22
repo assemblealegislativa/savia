@@ -241,7 +241,7 @@ body::before {
    margin-left: 30px; /* Aggiungi spazio a sinistra del testo */
   align-self: flex-start;
     height: 200px; /* Altezza fissa */
-    font-size: 0.4em;
+    font-size: 0.3em;
   }
 
   /* Stile delle caselle */
