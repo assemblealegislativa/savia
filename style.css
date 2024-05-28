@@ -221,7 +221,8 @@ body::before {
   .container-notizie {
       position: relative;
       top: 85vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     width: 90vw; /* Larghezza del 80% dello schermo */
     margin: 0 auto; /* Per centrare il contenitore */
     font-family: 'Barlow Condensed', sans-serif; /* Usa il font Barlow Condensed */
