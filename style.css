@@ -229,6 +229,16 @@ body::before {
     font-size: 5vw;
   }
   
+    .container-timeline {
+      position: relative;
+      top: 85vh;
+ 
+    display: flex;
+            justify-content: center;
+            align-items: center;
+   
+    }
+  
   div.cell img {
   width: 13vw; /* Larghezza al 100% del contenitore */
   height: auto; /* Altezza automatica per mantenere le proporzioni originali */
