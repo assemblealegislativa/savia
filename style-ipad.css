@@ -39,6 +39,13 @@ body::before {
     }
 }
 
+    .container-demo {
+      position: relative;
+      top: 131vh; /* Posiziona le caselle a 80vh dalla cima */
+      display: flex;
+      justify-content: center; /* Centra le caselle orizzontalmente */
+  }
+
 .loghi-container {
     padding-top: 20px;
     display: flex;
